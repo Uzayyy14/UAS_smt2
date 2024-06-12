@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Rumahan</title>
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My style-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+          <a href="#" class="navbar-logo">Kopi<span>Rumahan</span>.</a>
+
+      <div class="navbar-nav">
+         <a href="#home">Home</a>
+         <a href="#About">About</a>
+         <a href="#menu">Menu</a>
+         <!-- <a href="#contact">Contact</a> -->
+      </div>
+      
+      <div class="navbar-extra">
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="Cari menu...">
+          <button id="search-button">Cari</button>
+      </div>
+      
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+     <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+     </div> 
+
+    </nav>
+    <!-- Navbar end -->
+    
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Nikmatilah Secangkir Kopi <span>Rumahan</span></h1>
+            <p>coffee with an unrivaled sensation of enjoyment.</p>
+            <a href="#menu" class="cta">Beli Sekarang</a>
+            
+
+        </main>
+    </section>
+
+    <section id="About" class="about">
+        <h2><span>ABOUT</span> ME</h2>
+
+    <div class="row">
+        <div class="about-img">
+            <img src="anyar.jpg" alt="Tentang kami">
+        </div>
+        <div class="content">
+            <h3>Kopi Rumahan </h3>
+            <p> Kopi Rumahan kami adalah kopi yang memiliki citra rasa yang khas karena dibuat dengan cara tradisional kopi ini memiliki manfaat bagi tubuh yaitu dapat menjaga kesehatan otak.</p>
+            <p> Kafein di dalam kopi memberikan berbagai efek positif terhadap otak, diantaranyamembatu konsentrasi, meningkatkan kewaspadaan, memperbaiki suasana hati, hingga menurunkan resiko depresi.</p>
+        </div>
+    </div>
+    </section>
+
+    <div></div>
+    <section id="menu" class="menu">
+      <h2><span>DAFTAR</span>MENU</h2>
+      <p>Silahkan pilih Kopi favorite kamu!</p>
+      
+      <section class="menu">
+        <div class="riw">
+          <div class="menu-card" data-id="1" data-name="menu 1" data-price="18000">
+            <img src="latte.png" alt="menu 1">
+            <h3 class="menu-card-title">Coffee Latte</h3>
+            <p>Harga : 18.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="menu-card" data-id="2" data-name="menu 2" data-price="10000">
+            <img src="biji.jpg" alt="menu 2">
+            <h3 class="menu-card-title">Coffee Original</h3>
+            <P>Harga : 10.000</P>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="menu-card" data-id="1" data-name="menu 3" data-price="20000">
+            <img src="cangkir.jpg" alt="menu 3">
+            <h3 class="menu-card-title">Coffee Lampung</h3>
+            <p>Harga : 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="menu-card" data-id="2" data-name="menu 2" data-price="15000">
+            <img src="gelas.jpg" alt="menu 2">
+            <h3 class="menu-card-title">Coffee Milk</h3>
+            <p>Harga : 15.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+</section>
+
+<section id="cart">
+  <h2>Keranjang Belanja</h2>
+<ul id="cart-items"></ul>
+<p>Total: Rp. <span id="total-price">0</span></p>
+<button id="checkout-button">Checkout</button>
+</section>
+</main>
+</div>
+
+    <!-- <section id="contact" class="contact">
+        <h2><span>Contact</span> Me</h2>
+        <p>Anda dapat memesan pesanan secara online dengan cara menguhubingi kami dan kami akan mengirimkan pesanan ke tempat yang anda kirim.
+        </p>
+
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0879059306603!2d107.756214!3d-6.8800718000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd9e323ea5f5%3A0x56d8f60243984588!2sBaru%20Beureum%20(Camp%20%26%20Track%20Mt.%20Manglayang)!5e0!3m2!1sid!2sid!4v1697626290109!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+            <form action="">
+              <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Nama">
+              </div> 
+              <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="Email">
+              </div> 
+              <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="Nomor Handphone">
+              </div>
+              <div class="input-group">
+                <i data-feather="pesan"></i>
+                <input type="text" placeholder="catatan">
+              </div>
+              
+              <button type="submit" class="btn">Kirim Pesan</button> 
+            </form>
+        </div>
+    </section> -->
+
+    
+    
+<footer>
+  <div class="sosial">
+    <a href="https://www.instagram.com/uzi_a.m3?igsh=MTlqOHk3Yno2aDFicA==">
+      <i data-feather="instagram"></i></a>
+    <a href="https://www.instagram.com/uzi_a.m3?igsh=MTlqOHk3Yno2aDFicA==">
+      <i data-feather="facebook"></i></a>
+    <a href="https://youtu.be/kvyJPvJKTBI?si=qQv26j4BLX9kU-6r">
+      <i data-feather="youtube"></i></a>
+  </div>
+
+   <div class="link">
+    <a href="#home">Home</a>
+    <a href="#About">About</a>
+    <a href="#menu">Menu</a>
+    <!-- <a href="#contact">Contact</a> -->
+  </div> 
+
+  <div class="credit">
+    <p>Created by <a href="">FauziAbdulMalik.</a> | &copy; 2024.</p>
+  </div>
+</div>
+</footer>
+
+    <!-- Feather Icons-->
+    <script>
+        feather.replace();
+      </script>
+
+      <script src="script.js"></script>
+</body>
+</html>
